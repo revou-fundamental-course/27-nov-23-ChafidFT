@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+#operationTitle {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+}
+
+#headerButtons {
+    display: flex;
+    justify-content: center;
+    background-color: #3498db;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#headerButtons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#headerButtons a:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputField,
+.sideInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.sectionImage {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    display: block;
+}
+
+#buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9; 
+}
+
+button#resetButton {
+    background-color: #e74c3c; 
+}
+
+button#resetButton:hover {
+    background-color: #c0392b; 
+}

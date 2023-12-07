@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kalkulator Segitiga | TriMath Calculator App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="operationTitle">TriMath Calculator App</h1>
+
+        <div id="headerButtons">
+            <a href="#luasSegitiga">Luas Segitiga</a>
+            <a href="#kelilingSegitiga">Keliling Segitiga</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="luasSegitiga">
+            <h2>Hitung Luas Segitiga</h2>
+            <img src="images/luas segitiga.jpg" alt="Luas Segitiga" class="sectionImage">
+
+            <form id="luasForm">
+                <label for="alas">Alas:</label>
+                <input type="number" id="alas" class="inputField" required>
+
+                <label for="tinggi">Tinggi:</label>
+                <input type="number" id="tinggi" class="inputField" required>
+
+                <div id="buttons">
+                    <button type="button" onclick="hitungLuas()">Hitung</button>
+                    <button id="resetButton" type="button" onclick="resetForm('luasForm')">Reset</button>
+                </div>
+            </form>
+
+            <div id="luasResult"></div>
+        </div>
+
+        <div id="kelilingSegitiga">
+            <h2>Hitung Keliling Segitiga</h2>
+            <img src="images/keliling segitiga.jpg" alt="Keliling Segitiga" class="sectionImage">
+
+            <form id="kelilingForm">
+                <label for="sisi1">Sisi 1:</label>
+                <input type="number" id="sisi1" class="sideInput">
+
+                <label for="sisi2">Sisi 2:</label>
+                <input type="number" id="sisi2" class="sideInput">
+
+                <label for="sisi3">Sisi 3:</label>
+                <input type="number" id="sisi3" class="sideInput">
+
+                <div id="buttons">
+                    <button type="button" onclick="hitungKeliling()">Hitung</button>
+                    <button id="resetButton" type="button" onclick="resetForm('kelilingForm')">Reset</button>
+                </div>
+            </form>
+
+            <div id="kelilingResult"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
